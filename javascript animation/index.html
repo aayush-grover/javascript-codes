@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic js annimations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            margin:0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .header{
+            height: 15vh;
+            background-color: red;
+        }
+        .links{
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .link{
+            font-size: 50px;
+        }
+        .content{
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar{
+            background-color: rgb(18, 168, 18);
+            width: 15vw;
+        }
+        .button{
+            align-self: center;
+            height: 50px;
+            width: 90px;
+            font-size: large;
+        }
+        .footer{
+            height: 15vh;
+            background-color: blue;
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="links">
+            <div class="link">Link1</div>
+            <div class="link">Link2</div>
+            <div class="link">Link3</div>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="sidebar left"></div>
+        <button class="button">Reverse</button>
+        <div class="sidebar right"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
